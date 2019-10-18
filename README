@@ -1,4 +1,7 @@
-#!!!DISCLAIMER!!!
+# !!!DISCLAIMER!!!
+This is based on Xavier Danaux work! All rights go to him.
+The class is modified for my own purposes.
+------------------------------------------------------------------------------------
 moderncv -- a modern curriculum vitae class
 
 Moderncv provides a documentclass for typesetting curricula vitae in various
@@ -15,3 +18,11 @@ directory for some examples. Documents can be compiled into dvi, ps or pdf.
 Author: Xavier Danaux <xdanaux@gmail.com>
 Licence: The LaTeX Project Public Li­cense, version 1.3c
 URL: https://github.com/xdanaux/moderncv
+-----------------------------------------------------------------------------------
+
+## Changes:
+Changes are made in moderncv.cls, moderncvbodyi.sty and moderncvheadii.sty and are maked as 'edited by daniel'
+- cv lines extend after headlines
+- color adjustments
+- application subject 
+- minor adjustments
