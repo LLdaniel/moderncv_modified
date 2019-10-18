@@ -21,8 +21,9 @@ URL: https://github.com/xdanaux/moderncv
 -----------------------------------------------------------------------------------
 
 ## Changes:
-Changes are made in moderncv.cls, moderncvbodyi.sty and moderncvheadii.sty and are maked as 'edited by daniel'
+Changes are made in moderncv.cls, moderncvbodyi.sty and moderncvheadii.sty and are maked as 'edited by daniel' or 'author=daniel'
 - cv lines extend after headlines
 - color adjustments
 - application subject 
-- minor adjustments
+- date format letter
+- spaces letter closing
