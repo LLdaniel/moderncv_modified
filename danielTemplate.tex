@@ -1,0 +1,341 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3.5cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{First name} % Your first name
+\familyname{Last name} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Lebenslauf}
+\address{Steet}{City}
+\mobile{+123456}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{email@mail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[110pt][0.2pt]{Bild} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{Company}{Street\\123 City} % Letter recipient
+\date{\today} % Letter date
+\appsubject{application subject}% subject
+\opening{Dear Sir or Madam,} % Opening greeting
+\signature{0.65}{Unterschrift.jpg}
+\closing{Mit freundlichen Grüßen,} % Closing phrase
+\enclosure[Anlagen]{Lebenslauf, Zeugnis Master Of Science, Transcript Of Records Master, Zeugnis Bachelor Of Science} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-2] % Dummy text
+\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+%
+% define the height of the ending bar for section entries --> moved to moderncvbodyi.sty
+%\newlength{\barheight}
+%\setlength{\barheight}{0.95ex}
+%\newlength{\missinglength}
+%\newcommand{\sectionendingbar}{\hspace{\separatorcolumnwidth}\rule[\baseletterheight]{\maincolumnwidth-\separatorcolumnwidth-\missinglength}{\barheight}}
+%\newcommand{\measuresection}[1]{\settowidth{\missinglength}{\sectionstyle{#1}}} % measure the current section length
+%
+%----------------------------------------------------------------------------------------
+%	PERSONAL DATA
+%----------------------------------------------------------------------------------------
+\measuresection{Persönliche Daten}
+\section{Persönliche Daten}
+\cvitem{Name}{Name} 
+\cvitem{Vorname}{Vorname}
+\cvitem{Geburtsdatum}{01.01.2019}
+\cvitem{Geburtsort}{City}
+\cvitem{Anschrift}{Street, City}
+\cvitem{Familienstand}{}
+\cvitem{E-mail}{email@mail.com}
+\cvitem{Telefon}{+123456}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\measuresection{Ausbildung}
+\section{Ausbildung}
+\cventry{12/2019--12/2019}{ABC}{Uni}{City}{}{Abschlussnote: 0,7} % Arguments not required can be left empty
+\cventry{12/2019--12/2019}{ACC}{Uni}{City}{}{Abschlussnote: 0,8}  % Arguments not required can be left empty
+\cventry{12/2019--12/2019}{AAB}{Uni}{City}{}{}
+\cventry{12/2019--07/2019}{ABB}{School}{City}{}{Abschlussnote: 0,7}
+
+\measuresection{Wissenschaftliche Arbeiten}
+\section{Wissenschaftliche Arbeiten}
+\cventry{Masterarbeit}{Title}{Lehrstuhl}{Prof}{}{}
+\cventry{Bachelorarbeit}{}{Lehrstuhl}{Prof}{}{}
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+\newpage
+%----------------------------------------------------------------------------------------
+%	NEBENTÄTIGKEITEN
+%----------------------------------------------------------------------------------------
+\measuresection{Nebentätigkeiten}
+\section{Nebentätigkeiten}
+
+\subsection{ABC}
+\cventry{12/2019--12/2019}{Title}{What institution}{Uni}{City}{}
+
+\subsection{ABB}
+\cventry{12/2019 und 12/2019}{Title}{What}{Uni}{City}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\measuresection{IT Kenntnisse}
+\section{IT Kenntnisse}
+\cvitem{Programmiersprachen}{% ------------------------------------------------------------------
+        \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {C++};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {R};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (0.6,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {JavaScript};
+                         }
+         \end{tikzpicture}
+}
+\cvitem{GUI}{% ---------------------------------------------------------------------------------
+         \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Assembler};
+                         }
+         \end{tikzpicture}
+}
+\cvitem{Datenanalyse}{
+         \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {LabView};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {OriginPro};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (1.8,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Mathematica};
+                         }
+         \end{tikzpicture}
+}
+\cvitem{Betriebssysteme}{% -------------------------------------------------------------
+         \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Debian, Ubuntu};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Microsoft Windows};
+                         }
+         \end{tikzpicture}
+}
+\cvitem{Design/Bildbearbeitung}{
+         \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Adobe Photoshop CC};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Adobe InDesign CC};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (1.8,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {Adobe Illustrator CC};
+                         }
+         \end{tikzpicture}
+}
+\cvitem{Sonstige}{
+         \begin{tikzpicture}
+                          {     \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=color3,color3](0,1) rectangle (2.4,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {\LaTeX};
+                                \hspace{4cm}
+                                \draw[fill=color2,color2] (0,1) rectangle (3,1.2);
+                                \draw[fill=white,color3](0,1) rectangle (3,1.2);
+                                %
+                                \draw [fill=white,white] (0.599,1) rectangle (0.601,1.2);
+                                \draw [fill=white,white] (1.199,1) rectangle (1.201,1.2);
+                                \draw [fill=white,white] (1.799,1) rectangle (1.801,1.2);
+                                \draw [fill=white,white] (2.399,1) rectangle (2.401,1.2);
+                                %
+                                \node [above right] at (0,1.2) {LibreOffice};
+                         }
+         \end{tikzpicture}
+}
+\scriptsize
+  \cvitem{}{($^\star$Kenntnis-Skala reicht von \textit{grundlegender Kenntnis} \begin{tikzpicture}\draw[fill=color2,color2] (0,1) rectangle (1.25,1.1);\draw[fill=white,color3](0,1) rectangle (0.25,1.1);\draw [fill=white,white] (0.2499,1) rectangle (0.2501,1.1);\draw [fill=white,white] (0.4999,1) rectangle (0.5010,1.1);\draw [fill=white,white] (0.7499,1) rectangle (0.7501,1.1);\draw [fill=white,white] (0.9999,1) rectangle (1.0010,1.1);\end{tikzpicture} bis \textit{Expertenkenntnis} \begin{tikzpicture}\draw[fill=color2,color2] (0,1) rectangle (1.25,1.1);\draw[fill=white,color3](0,1) rectangle (1.25,1.1);\draw [fill=white,white] (0.2499,1) rectangle (0.2501,1.1);\draw [fill=white,white] (0.4999,1) rectangle (0.5010,1.1);\draw [fill=white,white] (0.7499,1) rectangle (0.7501,1.1);\draw [fill=white,white] (0.9999,1) rectangle (1.0010,1.1);\end{tikzpicture})}
+  \normalsize
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\measuresection{Sprachkenntnisse}
+\section{Sprachkenntnisse}
+
+\cvitemwithcomment{lang1}{}{}
+\cvitemwithcomment{lang2}{}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\measuresection{Interessen}
+\section{Interessen}
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvitemwithcomment{kreativ}{ABC}{}
+\cvitemwithcomment{sportlich}{ABB}{}
+\cvitemwithcomment{systematisch}{ACC}{}
+\cvitemwithcomment{sonstiges}{AAC}{}
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
